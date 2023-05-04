@@ -1,0 +1,3 @@
+POST /api/signup
+POST /api/login
+/api/logout /* Esta hay que introducirla como parámetro en la misma url, no he diseñado el botón en la navbar todavía */
