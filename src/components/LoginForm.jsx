@@ -13,7 +13,7 @@ const LoginForm = () => {
 
   const formHandler = async (data) => {
     await axios
-      .post("https://proyecto-0ytx.onrender.com/api/usuarios/login", {
+      .post(process.env.REACT_APP_BACKEND_URL + "/usuarios/login", {
         email: data.email,
         password: data.password,
       })

@@ -13,7 +13,7 @@ const SignupForm = () => {
   const navegar = useNavigate();
   const gestorFormulario = async (data) => {
     await axios
-      .post("https://proyecto-0ytx.onrender.com/api/usuarios/signup", {
+      .post(process.env.REACT_APP_BACKEND_URL + "/usuarios/signup", {
         email: data.email,
         username: data.username,
         password: data.password,

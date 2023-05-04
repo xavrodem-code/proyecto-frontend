@@ -8,7 +8,7 @@ const RegistrarFechas = () => {
     event.preventDefault();
     console.log(user_Id);
     axios
-      .post("https://proyecto-0ytx.onrender.com/api/fechas", { fecha, user_Id })
+      .post(process.env.REACT_APP_BACKEND_URL + "/fechas", { fecha, user_Id })
       .then((res) => {
         console.log(res);
       })

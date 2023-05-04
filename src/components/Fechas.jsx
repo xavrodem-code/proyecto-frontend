@@ -5,7 +5,7 @@ const Fechas = () => {
   const [fechas, setFechas] = useState([]);
   useEffect(() => {
     axios
-      .get("https://proyecto-0ytx.onrender.com/api/fechas", {
+      .get(process.env.REACT_APP_BACKEND_URL + "/fechas", {
         headers: {
           Authorization:
             "Bearer" + JSON.parse(localStorage.getItem("datosUsuario")).token,
