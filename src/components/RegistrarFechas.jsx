@@ -13,7 +13,7 @@ const RegistrarFechas = () => {
         "https://proyecto-0ytx.onrender.com/api/fechas/registrar",
         {
           fecha,
-          username,
+          userId,
         },
         {
           headers: {
