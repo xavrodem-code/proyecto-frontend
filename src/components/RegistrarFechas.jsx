@@ -3,11 +3,11 @@ import { useState } from "react";
 import axios from "axios";
 const RegistrarFechas = () => {
   const [fecha, setFecha] = useState("");
-  const username = JSON.parse(localStorage.getItem("datosUsuario")).userId;
+  const userId = JSON.parse(localStorage.getItem("datosUsuario")).userId;
   const token = JSON.parse(localStorage.getItem("datosUsuario")).token;
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(username);
+    console.log(userId);
     axios
       .post(
         "https://proyecto-0ytx.onrender.com/api/fechas/registrar",
