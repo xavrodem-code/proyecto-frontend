@@ -8,10 +8,18 @@ const RegistrarFechas = () => {
     event.preventDefault();
     console.log(username);
     axios
-      .post("https://proyecto-0ytx.onrender.com/api/fechas", {
-        fecha,
-        username,
-      })
+      .post(
+        "https://proyecto-0ytx.onrender.com/api/fechas/registrar",
+        {
+          fecha,
+          username,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      )
       .then((res) => {
         console.log(res);
       })
