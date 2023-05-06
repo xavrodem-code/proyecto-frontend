@@ -24,7 +24,7 @@ const LoginForm = () => {
           "datosUsuario",
           JSON.stringify({
             username: response.data.username,
-            userId: response.data.userId,
+            userId: response.data.idUsuario,
             token: response.data.token,
           })
         );
