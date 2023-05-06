@@ -7,7 +7,7 @@ const RegistrarFechas = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const localStorageData = localStorage.getItem("datosUsuario");
-    const userId = localStorageData.userId
+    const userId = localStorageData
       ? JSON.parse(localStorageData).userId
       : null;
     const token = localStorageData ? JSON.parse(localStorageData).token : null;
