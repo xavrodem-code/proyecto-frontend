@@ -3,8 +3,9 @@ import { useState } from "react";
 import axios from "axios";
 const RegistrarFechas = () => {
   const [fecha, setFecha] = useState("");
-  const userId = JSON.parse(localStorage.getItem("datosUsuario")).userId;
-  const token = JSON.parse(localStorage.getItem("datosUsuario")).token;
+  const localStorageData = localStorage.getItem("datosUsuario");
+  const userId = localStorageData ? JSON.parse(localStorageData).userId : null;
+  const token = localStorageData ? JSON.parse(localStorageData).token : null;
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(userId);
