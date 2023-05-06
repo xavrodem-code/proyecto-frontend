@@ -23,7 +23,6 @@ const LoginForm = () => {
         localStorage.setItem(
           "datosUsuario",
           JSON.stringify({
-            username: response.data.username,
             userId: response.data.userId,
             token: response.data.token,
           })
