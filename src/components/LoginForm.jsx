@@ -27,6 +27,7 @@ const LoginForm = () => {
             token: response.data.token,
           })
         );
+        console.log(localStorage);
         navigate("/fechas");
       })
       .catch((error) => {
