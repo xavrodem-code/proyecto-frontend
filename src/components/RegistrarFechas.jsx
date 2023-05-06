@@ -7,11 +7,11 @@ const RegistrarFechas = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const localStorageData = localStorage.getItem("datosUsuario");
-    const userId = localStorageData
+    const userId = localStorageData.userId
       ? JSON.parse(localStorageData).userId
       : null;
     const token = localStorageData ? JSON.parse(localStorageData).token : null;
-    console.log(localStorageData.userId);
+    console.log(localStorageData);
     axios
       .post(
         "https://proyecto-0ytx.onrender.com/api/fechas/registrar",
