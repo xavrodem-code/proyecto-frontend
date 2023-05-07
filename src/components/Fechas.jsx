@@ -12,13 +12,16 @@ const Fechas = () => {
         },
       })
       .then((response) => {
-        setFechas(response.data.fechas);
+        const fechasUsuario = response.data.fechas.filter(
+          (fecha) => fecha.usuario._id === usuarioId
+        );
+        setFechas(fechasUsuario);
         localStorage.setItem("fechas", JSON.stringify(response.data.fechas));
       })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [usuarioId]);
 
   return (
     <div className="fechas">
