@@ -3,6 +3,7 @@ import axios from "axios";
 
 const Fechas = () => {
   const [fechas, setFechas] = useState([]);
+  const usuarioId = JSON.parse(localStorage.getItem("datosUsuarios")).userId;
   useEffect(() => {
     axios
       .get(process.env.REACT_APP_BACKEND_URL + "/fechas", {
