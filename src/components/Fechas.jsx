@@ -12,7 +12,8 @@ const Fechas = () => {
         },
       })
       .then((response) => {
-        setFechas(response.data);
+        setFechas(response.data.fechas);
+        localStorage.setItem("fechas", JSON.stringify(response.data.fechas));
       })
       .catch((error) => {
         console.log(error);

@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import axios from "axios";
 const RegistrarFechas = () => {
-  const [fecha, setFecha] = useState("");
+  const [fecha, setFecha] = useState([""]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
