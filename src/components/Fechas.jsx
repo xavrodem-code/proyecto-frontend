@@ -17,6 +17,7 @@ const Fechas = () => {
           (fecha) => fecha.usuario._id === usuarioId
         );
         setFechas(fechasUsuario);
+        console.log(fechasUsuario);
         localStorage.setItem("fechas", JSON.stringify(response.data.fechas));
       })
       .catch((error) => {
