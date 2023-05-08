@@ -13,13 +13,15 @@ function App() {
       <div className="App">
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<SignupForm/>}></Route>
-            <Route path="/login" element={<LoginForm />}></Route>
-            <Route path="/signup" element={<SignupForm />}></Route>
-            <Route path="/logout" element={<Logout />}></Route>
-            <Route path="/fechas" element={<ReservarFechas />}></Route>
-          </Routes>
+          <div className="content-container">
+            <Routes>
+              <Route path="/" element={<SignupForm />}></Route>
+              <Route path="/login" element={<LoginForm />}></Route>
+              <Route path="/signup" element={<SignupForm />}></Route>
+              <Route path="/logout" element={<Logout />}></Route>
+              <Route path="/fechas" element={<ReservarFechas />}></Route>
+            </Routes>
+          </div>
         </Router>
       </div>
     </div>
