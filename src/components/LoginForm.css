@@ -1,7 +1,51 @@
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
+/* Ajuste los estilos del contenedor del formulario */
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+/* Estilo para el título */
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilo para el formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+/* Estilo para los campos de entrada */
+.inputs input[type="text"],
+.inputs input[type="password"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+/* Estilo para el botón de envío */
+.inputs button[type="submit"] {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para los mensajes de error */
+span {
+  color: red;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
