@@ -27,7 +27,32 @@
 .App-link {
   color: #61dafb;
 }
+/* App.css */
 
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  margin-top: 60px; /* set the margin-top to the height of the Navbar */
+}
+
+/* Navbar.css */
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
