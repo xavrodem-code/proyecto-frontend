@@ -35,68 +35,70 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="form">
-      <div className="title">Crea tu cuenta</div>
-      <div className="inputs">
-        <input
-          type="text"
-          name="email"
-          placeholder="email@email.com"
-          {...register(
-            "email",
-            {
-              pattern:
-                /^(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}$/,
-            },
-            { required: true, message: "Requerido" }
-          )}
-        />
-        {errors.email && errors.email.type === "required" && (
-          <span>Campo requerido</span>
-        )}
-        {errors.email && errors.email.type === "pattern" && (
-          <span>Formato Incorrecto</span>
-        )}
-        <br />
-        <form onSubmit={handleSubmit(gestorFormulario)}>
+    <div className="signup-container">
+      <div className="form">
+        <div className="title">Crea tu cuenta</div>
+        <div className="inputs">
           <input
             type="text"
-            name="username"
-            placeholder="Introduzca nombre de usuario"
+            name="email"
+            placeholder="email@email.com"
             {...register(
-              "username",
-              { minLength: 5 },
+              "email",
+              {
+                pattern:
+                  /^(?![_.-])((?![_.-][_.-])[a-zA-Z\d_.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}$/,
+              },
               { required: true, message: "Requerido" }
             )}
           />
-          {errors.username && errors.username.type === "required" && (
+          {errors.email && errors.email.type === "required" && (
             <span>Campo requerido</span>
           )}
-          {errors.username && errors.username.type === "minLength" && (
-            <span>Debe tener al menos 5 letras</span>
+          {errors.email && errors.email.type === "pattern" && (
+            <span>Formato Incorrecto</span>
           )}
           <br />
-          <input
-            type="password"
-            name="password"
-            placeholder="Introduzca nueva contraseña"
-            {...register("password", {
-              required: true,
-              minLength: 6,
-              message: "Requerido",
-            })}
-          />
-          {errors.password && errors.password.type === "required" && (
-            <span>Campo requerido</span>
-          )}
-          {errors.password && errors.password.type === "minLength" && (
-            <span>Mínimo 6 caracteres</span>
-          )}
-          <br />
-          <button type="submit" onClick={handleSubmit(gestorFormulario)}>
-            Registrarse
-          </button>
-        </form>
+          <form onSubmit={handleSubmit(gestorFormulario)}>
+            <input
+              type="text"
+              name="username"
+              placeholder="Introduzca nombre de usuario"
+              {...register(
+                "username",
+                { minLength: 5 },
+                { required: true, message: "Requerido" }
+              )}
+            />
+            {errors.username && errors.username.type === "required" && (
+              <span>Campo requerido</span>
+            )}
+            {errors.username && errors.username.type === "minLength" && (
+              <span>Debe tener al menos 5 letras</span>
+            )}
+            <br />
+            <input
+              type="password"
+              name="password"
+              placeholder="Introduzca nueva contraseña"
+              {...register("password", {
+                required: true,
+                minLength: 6,
+                message: "Requerido",
+              })}
+            />
+            {errors.password && errors.password.type === "required" && (
+              <span>Campo requerido</span>
+            )}
+            {errors.password && errors.password.type === "minLength" && (
+              <span>Mínimo 6 caracteres</span>
+            )}
+            <br />
+            <button type="submit" onClick={handleSubmit(gestorFormulario)}>
+              Registrarse
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
