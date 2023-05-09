@@ -28,11 +28,22 @@ const Fechas = () => {
   return (
     <div className="fechas">
       {fechas.length > 0 ? (
-        <ul>
-          {fechas.map((fecha) => (
-            <div key={fecha.id}>{fecha.fecha}</div>
-          ))}
-        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody>
+            {fechas.map((fecha) => (
+              <tr key={fecha.id}>
+                <td>{fecha.id}</td>
+                <td>{fecha.fecha}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       ) : (
         <h2>De momento todas las fechas están disponibles</h2>
       )}
