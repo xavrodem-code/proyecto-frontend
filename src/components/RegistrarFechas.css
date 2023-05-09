@@ -1,37 +1,48 @@
-form {
+.registrar-fechas {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+    justify-content: center;
+    height: 100%;
   }
   
-  label {
+  .registrar-fechas form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
   }
   
-  input {
+  .registrar-fechas label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .registrar-fechas input[type="text"] {
     width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
     border: none;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 5px;
+    margin-bottom: 0.5rem;
   }
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
+  
+  .registrar-fechas button[type="submit"] {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: #4285f4;
     color: #fff;
-    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 0.5rem;
   }
-  button:hover {
-    background-color: #0069d9;
+  
+  .registrar-fechas button[type="submit"]:hover {
+    background-color: #3367d6;
   }
   
