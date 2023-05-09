@@ -55,12 +55,6 @@ const LoginForm = () => {
               { required: true, message: "Campo requerido" }
             )}
           />
-          {errors.email && errors.email.type === "required" && (
-            <span>Campo email requerido</span>
-          )}
-          {errors.email && errors.email.type === "pattern" && (
-            <span>Campo email requerido</span>
-          )}
           <input
             type="password"
             name="password"
@@ -71,6 +65,12 @@ const LoginForm = () => {
               message: "Requerido",
             })}
           />
+          {errors.email && errors.email.type === "required" && (
+            <span>Campo email requerido</span>
+          )}
+          {errors.email && errors.email.type === "pattern" && (
+            <span>Campo email requerido</span>
+          )}
           {errors.password && errors.password.type === "required" && (
             <span>Campo requerido</span>
           )}
