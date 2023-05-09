@@ -38,7 +38,7 @@ const LoginForm = () => {
 
   return (
     <div className="displayContainer">
-      <div className="title"></div>
+      <div className="title">Ingresa en tu cuenta</div>
       <div className="inputs">
         <form className="form" onSubmit={handleSubmit(formHandler)}>
           <input
