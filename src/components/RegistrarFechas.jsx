@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import "../components/RegistrarFechas.css";
+
 const RegistrarFechas = () => {
   const [fecha, setFecha] = useState([""]);
 
