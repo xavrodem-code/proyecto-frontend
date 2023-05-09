@@ -1,6 +1,6 @@
 import React from "react";
 import Fechas from "../components/Fechas";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import RegistrarFechas from "../components/RegistrarFechas";
 import "./ReservarFechas.css";
 
