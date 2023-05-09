@@ -42,6 +42,7 @@ const RegistrarFechas = () => {
           Fecha:
           <input
             type="text"
+            placeholder="DD/MM/AAAA"
             value={fecha}
             onChange={(event) => setFecha(event.target.value)}
           />
