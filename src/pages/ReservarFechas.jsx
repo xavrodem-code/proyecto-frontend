@@ -7,10 +7,11 @@ import "./ReservarFechas.css";
 const ReservarFechas = () => {
   const usuario = JSON.parse(localStorage.getItem("datosUsuario"));
   const navegar = useNavigate();
-  if (!usuario || !usuario.token || !usuario.userId) {
-    navegar("/login");
-    return null;
-  }
+  React.useEffect(() => {
+    if (!usuario || !usuario.token || !usuario.userId) {
+      navegar("/login");
+    }
+  }, [usuario, navegar]);
   return (
     <div className="reservar-fechas">
       <div className="fechas-container">
