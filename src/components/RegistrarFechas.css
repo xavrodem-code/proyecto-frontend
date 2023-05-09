@@ -6,39 +6,43 @@
     height: 100%;
   }
   
-  .registrar-form {
+  .registrar-fechas form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
   }
   
-  .registrar-form label {
+  .registrar-fechas label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
   }
   
-  .registrar-form input {
-    width: 20rem;
+  .registrar-fechas input[type="text"] {
+    width: 100%;
     padding: 0.5rem;
+    font-size: 1rem;
     border-radius: 0.5rem;
     border: none;
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
   
-  .registrar-form button {
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: #2979FF;
-    color: white;
+  .registrar-fechas button[type="submit"] {
+    padding: 0.5rem 2rem;
     font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 0.5rem;
+  }
+  
+  .registrar-fechas button[type="submit"]:hover {
+    background-color: #3367d6;
   }
   
