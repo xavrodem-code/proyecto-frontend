@@ -31,7 +31,6 @@ const Fechas = () => {
         <table>
           <thead>
             <tr>
-              <th>ID</th>
               <th>Fecha</th>
             </tr>
           </thead>
