@@ -3,6 +3,7 @@ import "../components/LoginForm.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 const LoginForm = () => {
   const navigate = useNavigate();
   const {
@@ -38,7 +39,7 @@ const LoginForm = () => {
 
   return (
     <div className="displayContainer">
-      <div className="title">Ingresa en tu cuenta</div>
+      <h2>Ingresar en la cuenta</h2>
       <div className="inputs">
         <form className="form" onSubmit={handleSubmit(formHandler)}>
           <input
