@@ -9,7 +9,7 @@ const ReservarFechas = () => {
   const navegar = useNavigate();
   if (!usuario || !usuario.token || !usuario.userId) {
     navegar("/login");
-    return;
+    return null;
   }
   return (
     <div className="reservar-fechas">
