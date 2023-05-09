@@ -7,16 +7,24 @@ const Navbar = () => {
     <div>
       <ul className="navBar">
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/" style={{ color: "black", textDecoration: "none" }}>
+            Inicio
+          </Link>
         </li>
         <li>
-          <Link to="/login">Ingresar</Link>
+          <Link to="/login" style={{ color: "black", textDecoration: "none" }}>
+            Ingresar
+          </Link>
         </li>
         <li>
-          <Link to="/signup">Registrarse</Link>
+          <Link to="/signup" style={{ color: "black", textDecoration: "none" }}>
+            Registrarse
+          </Link>
         </li>
         <li>
-          <Link to="/fechas">Reservar Fechas</Link>
+          <Link to="/fechas" style={{ color: "black", textDecoration: "none" }}>
+            Reservar Fechas
+          </Link>
         </li>
       </ul>
     </div>
