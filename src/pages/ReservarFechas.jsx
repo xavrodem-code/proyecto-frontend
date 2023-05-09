@@ -1,7 +1,7 @@
 import React from "react";
 import Fechas from "../components/Fechas";
 import RegistrarFechas from "../components/RegistrarFechas";
-import "../components/ReservarFechas.css";
+import "./ReservarFechas.css";
 
 const ReservarFechas = () => {
   return (
