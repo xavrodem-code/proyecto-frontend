@@ -37,7 +37,10 @@
 }
 
 .content-container {
-  margin-top: 0; /* set the margin-top to the height of the Navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Navbar.css */
