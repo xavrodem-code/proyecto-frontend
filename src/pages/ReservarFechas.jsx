@@ -1,14 +1,15 @@
 import React from "react";
 import Fechas from "../components/Fechas";
-import { Navigate } from "react-router";
+import { useNavigate } from "react-router";
 import RegistrarFechas from "../components/RegistrarFechas";
 import "./ReservarFechas.css";
 
 const ReservarFechas = () => {
   const usuario = JSON.parse(localStorage.getItem("datosUsuario"));
-
+  const navegar = useNavigate();
   if (!usuario || !usuario.token || !usuario.userId) {
-    return <Navigate to="/login" />;
+    navegar("/login");
+    return;
   }
   return (
     <div className="reservar-fechas">
