@@ -27,6 +27,7 @@
 .App-link {
   color: #61dafb;
 }
+
 /* App.css */
 
 .App {
@@ -36,7 +37,7 @@
 }
 
 .content-container {
-  margin-top: 60px; /* set the margin-top to the height of the Navbar */
+  margin-top: 0; /* set the margin-top to the height of the Navbar */
 }
 
 /* Navbar.css */
@@ -52,7 +53,9 @@
   align-items: center;
   height: 30px;
   padding: 0 10px;
+  margin: 0;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
