@@ -54,7 +54,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-.display-container {
+.displayContainer {
   display: flex;
   justify-content: center;
   align-items: center;
