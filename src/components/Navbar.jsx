@@ -7,16 +7,13 @@ const Navbar = () => {
     <div>
       <ul className="navBar">
         <li>
-          <Link to="/" />
-          Inicio
+          <Link to="/">Inicio</Link>
         </li>
         <li>
-          <Link to="/login" />
-          Ingresar
+          <Link to="/login">Ingresar</Link>
         </li>
         <li>
-          <Link to="/signup" />
-          Registrarse
+          <Link to="/signup">Registrarse</Link>
         </li>
       </ul>
     </div>
