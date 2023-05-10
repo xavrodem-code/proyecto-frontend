@@ -49,6 +49,9 @@ const RegistrarFechas = () => {
         </label>
         <button type="submit">Confirmar reserva</button>
       </form>
+      <Link to="/login">
+        <button>Salir de la App</button>
+      </Link>
     </div>
   );
 };
