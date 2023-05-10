@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import "../components/RegistrarFechas.css";
 
 const RegistrarFechas = () => {
@@ -49,7 +50,7 @@ const RegistrarFechas = () => {
         </label>
         <button type="submit">Confirmar reserva</button>
       </form>
-      <Link to="/login">
+      <Link to="/logout">
         <button>Salir de la App</button>
       </Link>
     </div>
